@@ -1,0 +1,6 @@
+rootProject.name = 'corba2'
+
+include 'corba1'
+
+include 'corba2-simplr'
+

@@ -1,0 +1,17 @@
+
+module pl{
+    module edu{
+        module pjwst{
+            module s8132{
+                module ShoppingCart{
+                    interface ShoppingCart {
+                        typedef sequence<long> products;
+                        readonly attribute products p;
+                        void addProduct(in long productId);
+                        void removeProduct(in long productId);
+                    };
+                };
+            };
+        };
+    };
+};

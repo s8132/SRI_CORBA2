@@ -1,0 +1,34 @@
+
+module pl{
+    module edu{
+        module pjwst{
+            module s8132{
+                module ShoppingCart{
+
+                    struct Product{
+                        long id;
+                        string name;
+                    };
+
+                    struct CartItem{
+                        long amount;
+                        Product product;
+                    };
+
+                    typedef sequence<Product> Products;
+                    typedef sequence<CartItem> CartItems;
+
+                    interface ShoppingCart {
+                        readonly attribute CartItems cartItems;
+                        void addProduct(in CartItem cartItem);
+                        void checkOut();
+                    };
+
+                    interface Shop {
+                        readonly attribute Products products;
+                    };
+                };
+            };
+        };
+    };
+};
